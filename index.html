@@ -1,0 +1,1107 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1" />
+    <title>إلى آية: بداية عام مليئة بالحب 2026</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;800&family=Lora:wght@400;500;600;700&family=Poppins:wght@400;500;600&family=Cairo:wght@400;500;600;700&display=swap" rel="stylesheet" />
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      html {
+        scroll-behavior: smooth;
+      }
+
+      body {
+        font-family: 'Cairo', 'Lora', serif;
+        background: linear-gradient(135deg, #0a0a1a 0%, #1a0033 50%, #0a0a1a 100%);
+        color: #f5f5f5;
+        overflow-x: hidden;
+        min-height: 100vh;
+        line-height: 1.8;
+        letter-spacing: 0.5px;
+      }
+
+      .container {
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        overflow: hidden;
+      }
+
+      /* النجوم الخلفية */
+      .stars {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+      }
+
+      .star {
+        position: absolute;
+        width: 2px;
+        height: 2px;
+        background: white;
+        border-radius: 50%;
+        opacity: 0.3;
+        animation: twinkle 3s infinite;
+      }
+
+      @keyframes twinkle {
+        0%, 100% { opacity: 0.3; }
+        50% { opacity: 1; }
+      }
+
+      /* الجسيمات الطائرة */
+      .particles {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+      }
+
+      .particle {
+        position: absolute;
+        width: 4px;
+        height: 4px;
+        background: radial-gradient(circle, #c77dff, #9d4edd);
+        border-radius: 50%;
+        opacity: 0.6;
+        animation: float 20s infinite;
+      }
+
+      @keyframes float {
+        0% {
+          transform: translateY(0) translateX(0);
+          opacity: 0;
+        }
+        10% {
+          opacity: 0.6;
+        }
+        90% {
+          opacity: 0.6;
+        }
+        100% {
+          transform: translateY(-100vh) translateX(100px);
+          opacity: 0;
+        }
+      }
+
+      /* الورد والقلوب الطائرة */
+      .floating-elements {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        pointer-events: none;
+      }
+
+      .rose, .heart-float {
+        position: absolute;
+        font-size: 24px;
+        animation: floatUp 8s infinite ease-in;
+        opacity: 0.7;
+      }
+
+      .heart-float {
+        font-size: 28px;
+        animation: floatUp 10s infinite ease-in;
+      }
+
+      @keyframes floatUp {
+        0% {
+          transform: translateY(100vh) translateX(0) rotate(0deg);
+          opacity: 0;
+        }
+        10% {
+          opacity: 0.7;
+        }
+        90% {
+          opacity: 0.7;
+        }
+        100% {
+          transform: translateY(-100vh) translateX(150px) rotate(360deg);
+          opacity: 0;
+        }
+      }
+
+      /* المحتوى الرئيسي */
+      .content {
+        position: relative;
+        z-index: 10;
+        text-align: center;
+        max-width: 95%;
+        width: 100%;
+        animation: fadeIn 1s ease-in;
+        padding: 20px;
+      }
+
+      @keyframes fadeIn {
+        from {
+          opacity: 0;
+        }
+        to {
+          opacity: 1;
+        }
+      }
+
+      .screen {
+        display: none;
+        animation: slideUp 0.8s ease-out;
+      }
+
+      .screen.active {
+        display: block;
+      }
+
+      @keyframes slideUp {
+        from {
+          opacity: 0;
+          transform: translateY(50px);
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+
+      /* الشاشة الأولى */
+      .screen-1 {
+        text-align: center;
+      }
+
+      .star-icon {
+        font-size: 80px;
+        margin-bottom: 30px;
+        animation: pulse 2s infinite;
+      }
+
+      @keyframes pulse {
+        0%, 100% {
+          opacity: 0.5;
+          transform: scale(1);
+        }
+        50% {
+          opacity: 1;
+          transform: scale(1.1);
+        }
+      }
+
+      .screen-1 h1 {
+        font-family: 'Playfair Display', serif;
+        font-size: 80px;
+        font-weight: 800;
+        color: #e0b0ff;
+        margin-bottom: 20px;
+        text-shadow: 0 0 40px rgba(224, 176, 255, 0.8);
+        letter-spacing: 3px;
+      }
+
+      .screen-1 p {
+        font-family: 'Cairo', sans-serif;
+        font-size: 26px;
+        color: #d4a5ff;
+        margin-bottom: 40px;
+        font-weight: 500;
+        letter-spacing: 1px;
+      }
+
+      .btn {
+        background: linear-gradient(135deg, #9d4edd 0%, #c77dff 100%);
+        color: white;
+        border: none;
+        padding: 16px 45px;
+        font-size: 18px;
+        border-radius: 50px;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        font-family: 'Cairo', sans-serif;
+        font-weight: 600;
+        box-shadow: 0 0 25px rgba(157, 78, 221, 0.6);
+        letter-spacing: 1px;
+      }
+
+      .btn:hover {
+        transform: translateY(-4px);
+        box-shadow: 0 0 40px rgba(157, 78, 221, 0.9);
+        background: linear-gradient(135deg, #c77dff 0%, #e0b0ff 100%);
+      }
+
+      /* الشاشة الثانية */
+      .screen-2 {
+        text-align: center;
+      }
+
+      .screen-2 h2 {
+        font-family: 'Playfair Display', serif;
+        font-size: 72px;
+        font-weight: 800;
+        color: #e0b0ff;
+        margin-bottom: 20px;
+        text-shadow: 0 0 40px rgba(224, 176, 255, 0.7);
+        letter-spacing: 3px;
+        animation: fadeIn 1s ease-in;
+      }
+
+      .screen-2 .subtitle {
+        font-family: 'Cairo', sans-serif;
+        font-size: 28px;
+        color: #ff006e;
+        margin-bottom: 40px;
+        animation: fadeIn 1.5s ease-in;
+        font-weight: 600;
+        letter-spacing: 1px;
+      }
+
+      /* الشاشة الثالثة - الرسالة */
+      .screen-3 {
+        text-align: right;
+        direction: rtl;
+        max-width: 900px;
+        max-height: 85vh;
+        overflow-y: auto;
+        padding: 20px;
+        width: 100%;
+      }
+
+      .screen-3::-webkit-scrollbar {
+        width: 8px;
+      }
+
+      .screen-3::-webkit-scrollbar-track {
+        background: rgba(157, 78, 221, 0.1);
+        border-radius: 10px;
+      }
+
+      .screen-3::-webkit-scrollbar-thumb {
+        background: rgba(199, 125, 255, 0.5);
+        border-radius: 10px;
+      }
+
+      .screen-3::-webkit-scrollbar-thumb:hover {
+        background: rgba(199, 125, 255, 0.8);
+      }
+
+      .screen-3 h3 {
+        font-family: 'Playfair Display', serif;
+        font-size: 48px;
+        font-weight: 800;
+        color: #e0b0ff;
+        margin-bottom: 40px;
+        text-shadow: 0 0 25px rgba(224, 176, 255, 0.6);
+        letter-spacing: 2px;
+      }
+
+      .message {
+        font-family: 'Cairo', sans-serif;
+        font-size: 20px;
+        line-height: 2.2;
+        color: #f5f5f5;
+        text-align: justify;
+        margin-bottom: 30px;
+        font-weight: 500;
+        letter-spacing: 0.8px;
+      }
+
+      .message-section {
+        margin-bottom: 35px;
+        opacity: 0;
+        animation: fadeInText 1s ease-in forwards;
+        padding: 20px 20px;
+        border-right: 4px solid #c77dff;
+        background: rgba(157, 78, 221, 0.1);
+        border-radius: 8px;
+      }
+
+      .message-section:nth-child(1) { animation-delay: 0.2s; }
+      .message-section:nth-child(2) { animation-delay: 0.6s; }
+      .message-section:nth-child(3) { animation-delay: 1s; }
+      .message-section:nth-child(4) { animation-delay: 1.4s; }
+      .message-section:nth-child(5) { animation-delay: 1.8s; }
+      .message-section:nth-child(6) { animation-delay: 2.2s; }
+      .message-section:nth-child(7) { animation-delay: 2.6s; }
+
+      .section-title {
+        font-size: 20px;
+        color: #ff006e;
+        margin-bottom: 12px;
+        font-weight: 700;
+        letter-spacing: 1px;
+      }
+
+      .message p {
+        margin-bottom: 15px;
+        line-height: 2;
+        color: #f5f5f5;
+      }
+
+      .message p:last-child {
+        margin-bottom: 0;
+      }
+
+      .final-message {
+        font-size: 22px;
+        color: #e0b0ff;
+        font-weight: 700;
+        margin-top: 20px;
+        text-shadow: 0 0 15px rgba(224, 176, 255, 0.5);
+        letter-spacing: 1px;
+      }
+
+      @keyframes fadeInText {
+        from {
+          opacity: 0;
+          transform: translateY(30px);
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+
+      /* الشاشة الرابعة - النهاية */
+      .screen-4 {
+        text-align: center;
+      }
+
+      .screen-4 .ending {
+        font-family: 'Playfair Display', serif;
+        font-size: 72px;
+        font-weight: 800;
+        color: #ff006e;
+        margin-bottom: 20px;
+        text-shadow: 0 0 40px rgba(255, 0, 110, 0.8);
+        animation: pulse 2s infinite;
+        letter-spacing: 3px;
+      }
+
+      .screen-4 .ending-sub {
+        font-family: 'Cairo', sans-serif;
+        font-size: 32px;
+        color: #e0b0ff;
+        margin-bottom: 40px;
+        animation: fadeIn 1.5s ease-in;
+        font-weight: 600;
+        letter-spacing: 1.5px;
+      }
+
+      .screen-4 .heart {
+        font-size: 80px;
+        animation: heartBeat 1.5s infinite;
+        display: inline-block;
+      }
+
+      @keyframes heartBeat {
+        0%, 100% {
+          transform: scale(1);
+        }
+        25% {
+          transform: scale(1.2);
+        }
+        50% {
+          transform: scale(1);
+        }
+      }
+
+      .screen-4 .signature {
+        margin-top: 50px;
+        font-family: 'Cairo', sans-serif;
+        font-size: 24px;
+        color: #b0b0b0;
+        font-weight: 500;
+        letter-spacing: 1px;
+      }
+
+      .screen-4 .from-name {
+        font-family: 'Playfair Display', serif;
+        font-size: 36px;
+        color: #c77dff;
+        margin-top: 20px;
+        font-weight: 800;
+        letter-spacing: 2px;
+        text-shadow: 0 0 20px rgba(199, 125, 255, 0.5);
+      }
+
+      /* التنقل */
+      .nav-buttons {
+        position: fixed;
+        bottom: 40px;
+        left: 50%;
+        transform: translateX(-50%);
+        display: flex;
+        gap: 20px;
+        z-index: 100;
+      }
+
+      .nav-btn {
+        background: rgba(157, 78, 221, 0.3);
+        border: 2px solid #c77dff;
+        color: #c77dff;
+        padding: 12px 25px;
+        border-radius: 25px;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        font-family: 'Cairo', sans-serif;
+        font-weight: 600;
+        font-size: 16px;
+        letter-spacing: 1px;
+      }
+
+      .nav-btn:hover {
+        background: rgba(157, 78, 221, 0.6);
+        box-shadow: 0 0 20px rgba(199, 125, 255, 0.6);
+        transform: translateY(-2px);
+      }
+
+      .nav-btn:disabled {
+        opacity: 0.3;
+        cursor: not-allowed;
+      }
+
+      /* الشريط العلوي */
+      .progress-bar {
+        position: fixed;
+        top: 0;
+        left: 0;
+        height: 4px;
+        background: linear-gradient(90deg, #9d4edd, #c77dff, #ff006e);
+        width: 0%;
+        transition: width 0.3s ease;
+        z-index: 1000;
+        box-shadow: 0 0 15px rgba(199, 125, 255, 0.5);
+      }
+
+        /* شاشات كبيرة جداً */
+      @media (min-width: 1920px) {
+        .screen-1 h1 {
+          font-size: 100px;
+        }
+
+        .screen-1 p {
+          font-size: 32px;
+        }
+
+        .screen-2 h2 {
+          font-size: 90px;
+        }
+
+        .screen-2 .subtitle {
+          font-size: 36px;
+        }
+
+        .screen-3 h3 {
+          font-size: 60px;
+        }
+
+        .message {
+          font-size: 24px;
+          line-height: 2.4;
+        }
+
+        .screen-4 .ending {
+          font-size: 90px;
+        }
+
+        .screen-4 .ending-sub {
+          font-size: 40px;
+        }
+
+        .screen-4 .from-name {
+          font-size: 48px;
+        }
+
+        .screen-4 .heart {
+          font-size: 100px;
+        }
+      }
+
+      /* شاشات متوسطة إلى كبيرة */
+      @media (min-width: 1200px) and (max-width: 1919px) {
+        .screen-1 h1 {
+          font-size: 90px;
+        }
+
+        .screen-1 p {
+          font-size: 28px;
+        }
+
+        .screen-2 h2 {
+          font-size: 80px;
+        }
+
+        .screen-2 .subtitle {
+          font-size: 32px;
+        }
+
+        .screen-3 h3 {
+          font-size: 52px;
+        }
+
+        .message {
+          font-size: 22px;
+          line-height: 2.3;
+        }
+
+        .screen-4 .ending {
+          font-size: 80px;
+        }
+
+        .screen-4 .ending-sub {
+          font-size: 36px;
+        }
+
+        .screen-4 .from-name {
+          font-size: 44px;
+        }
+
+        .screen-4 .heart {
+          font-size: 90px;
+        }
+      }
+
+      /* شاشات الأجهزة اللوحية الكبيرة */
+      @media (min-width: 1024px) and (max-width: 1199px) {
+        .screen-1 h1 {
+          font-size: 70px;
+        }
+
+        .screen-1 p {
+          font-size: 24px;
+        }
+
+        .screen-2 h2 {
+          font-size: 64px;
+        }
+
+        .screen-2 .subtitle {
+          font-size: 28px;
+        }
+
+        .screen-3 h3 {
+          font-size: 44px;
+        }
+
+        .message {
+          font-size: 20px;
+          line-height: 2.2;
+        }
+
+        .screen-4 .ending {
+          font-size: 64px;
+        }
+
+        .screen-4 .ending-sub {
+          font-size: 30px;
+        }
+
+        .screen-4 .from-name {
+          font-size: 36px;
+        }
+
+        .screen-4 .heart {
+          font-size: 70px;
+        }
+      }
+
+      /* شاشات الأجهزة اللوحية المتوسطة */
+      @media (min-width: 768px) and (max-width: 1023px) {
+        .screen-1 h1 {
+          font-size: 60px;
+        }
+
+        .screen-1 p {
+          font-size: 22px;
+        }
+
+        .screen-2 h2 {
+          font-size: 56px;
+        }
+
+        .screen-2 .subtitle {
+          font-size: 24px;
+        }
+
+        .screen-3 h3 {
+          font-size: 40px;
+        }
+
+        .message {
+          font-size: 19px;
+          line-height: 2.1;
+        }
+
+        .message p {
+          padding: 12px 15px;
+        }
+
+        .screen-4 .ending {
+          font-size: 60px;
+        }
+
+        .screen-4 .ending-sub {
+          font-size: 28px;
+        }
+
+        .screen-4 .from-name {
+          font-size: 32px;
+        }
+
+        .screen-4 .heart {
+          font-size: 65px;
+        }
+
+        .nav-buttons {
+          bottom: 25px;
+          gap: 15px;
+        }
+
+        .nav-btn {
+          padding: 11px 22px;
+          font-size: 15px;
+        }
+
+        .rose, .heart-float {
+          font-size: 22px;
+        }
+
+        .heart-float {
+          font-size: 24px;
+        }
+      }
+
+      /* الهواتف الكبيرة */
+      @media (min-width: 600px) and (max-width: 767px) {
+        .screen-1 h1 {
+          font-size: 48px;
+        }
+
+        .screen-1 p {
+          font-size: 20px;
+        }
+
+        .screen-2 h2 {
+          font-size: 44px;
+        }
+
+        .screen-2 .subtitle {
+          font-size: 20px;
+        }
+
+        .screen-3 h3 {
+          font-size: 36px;
+        }
+
+        .message {
+          font-size: 17px;
+          line-height: 2;
+        }
+
+        .message p {
+          padding: 12px 15px;
+        }
+
+        .screen-4 .ending {
+          font-size: 48px;
+        }
+
+        .screen-4 .ending-sub {
+          font-size: 24px;
+        }
+
+        .screen-4 .from-name {
+          font-size: 28px;
+        }
+
+        .screen-4 .heart {
+          font-size: 55px;
+        }
+
+        .nav-buttons {
+          bottom: 22px;
+          gap: 12px;
+        }
+
+        .nav-btn {
+          padding: 10px 20px;
+          font-size: 14px;
+        }
+
+        .rose, .heart-float {
+          font-size: 20px;
+        }
+
+        .heart-float {
+          font-size: 22px;
+        }
+      }
+
+      /* الهواتف المتوسطة */
+      @media (min-width: 480px) and (max-width: 599px) {
+        .screen-1 h1 {
+          font-size: 40px;
+        }
+
+        .screen-1 p {
+          font-size: 18px;
+        }
+
+        .screen-2 h2 {
+          font-size: 36px;
+        }
+
+        .screen-2 .subtitle {
+          font-size: 18px;
+        }
+
+        .screen-3 h3 {
+          font-size: 32px;
+        }
+
+        .message {
+          font-size: 16px;
+          line-height: 1.9;
+        }
+
+        .message p {
+          padding: 10px 12px;
+        }
+
+        .screen-4 .ending {
+          font-size: 40px;
+        }
+
+        .screen-4 .ending-sub {
+          font-size: 20px;
+        }
+
+        .screen-4 .from-name {
+          font-size: 24px;
+        }
+
+        .screen-4 .heart {
+          font-size: 48px;
+        }
+
+        .nav-buttons {
+          bottom: 18px;
+          gap: 10px;
+        }
+
+        .nav-btn {
+          padding: 9px 16px;
+          font-size: 13px;
+        }
+
+        .rose, .heart-float {
+          font-size: 18px;
+        }
+
+        .heart-float {
+          font-size: 20px;
+        }
+      }
+
+      /* الهواتف الصغيرة */
+      @media (max-width: 479px) {
+        .screen-1 h1 {
+          font-size: 32px;
+        }
+
+        .screen-1 p {
+          font-size: 16px;
+        }
+
+        .screen-2 h2 {
+          font-size: 28px;
+        }
+
+        .screen-2 .subtitle {
+          font-size: 16px;
+        }
+
+        .screen-3 h3 {
+          font-size: 26px;
+        }
+
+        .message {
+          font-size: 15px;
+          line-height: 1.8;
+        }
+
+        .message p {
+          padding: 10px 12px;
+          margin-bottom: 15px;
+        }
+
+        .screen-4 .ending {
+          font-size: 32px;
+        }
+
+        .screen-4 .ending-sub {
+          font-size: 18px;
+        }
+
+        .screen-4 .from-name {
+          font-size: 20px;
+        }
+
+        .screen-4 .heart {
+          font-size: 40px;
+        }
+
+        .nav-buttons {
+          bottom: 15px;
+          gap: 8px;
+        }
+
+        .nav-btn {
+          padding: 8px 14px;
+          font-size: 12px;
+        }
+
+        .rose, .heart-float {
+          font-size: 16px;
+        }
+
+        .heart-float {
+          font-size: 18px;
+        }
+
+        .btn {
+          padding: 12px 30px;
+          font-size: 16px;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="progress-bar"></div>
+    
+    <div class="container">
+      <div class="stars" id="stars"></div>
+      <div class="particles" id="particles"></div>
+      <div class="floating-elements" id="floatingElements"></div>
+      
+      <div class="content">
+        <!-- الشاشة الأولى -->
+        <div class="screen screen-1 active">
+          <div class="star-icon">✨</div>
+          <h1>To Aya</h1>
+          <p>هذه تهنئة لحب قلبي في بداية      2026</p>
+          <button class="btn" onclick="nextScreen()">رصي أهني خلي ناخد قلبك </button>
+        </div>
+
+        <!-- الشاشة الثانية -->
+        <div class="screen screen-2">
+          <h2>2026</h2>
+          <p class="subtitle">قبل كل شيء نحبـــك ي عمري 💜 </p>
+          <button class="btn" onclick="nextScreen()">رصي أهني ي قلبي</button>
+        </div>
+
+        <!-- الشاشة الثالثة - الرسالة الرومانسية -->
+        <div class="screen screen-3">
+          <h3>إلى حبيبت قلبي أية 💜</h3>
+          <div class="message">
+            <!-- الجزء الأول -->
+            <div class="message-section">
+              <p class="section-title">أول حاجة ....</p>
+              <p>نحــبك ..</p>
+              <p>مع أول نفس في 2026، نلقى روحي نبتسم بدون سبب واضح، وبعدين نفهم إن السبب هو إنتِ.<br>سنة جديدة تدخل، لكن الإحساس اللي في قلبي هو نفسه… إحساس إن وجودك في حياتي مش صدفة، وإن كل لحظة فاتت كانت تمهيد للحظة نكون فيها معاك.</p>
+            </div>
+
+            <!-- الجزء الثاني -->
+            <div class="message-section">
+              <p class="section-title"> ثاني حاجة ....</p>
+              <p>نحــبك..<br>إنتِ المكان اللي نرتاح فيه بدون ما نفسّر،<br>والهدوء اللي يجي بعد تعب طويل،<br>والأمان اللي ما يحتاجش وعود.<br>وجودك يخلّي الدنيا أخف، والوقت أحن، وحتى الأيام الصعبة تمر وهي عارفة إن في آخرها إنتِ.</p>
+            </div>
+
+            <!-- الجزء الثالث -->
+            <div class="message-section">
+              <p class="section-title">ثالث حاجة ....</p>
+              <p>نحــبك..<br>حبك اختيار نعاوده كل يوم،<br>مش لأن لازم، لكن لأن نبي.<br>كل ما يكبر الوقت، يكبر حبك معاه،<br>وكل سنة جديدة نكتشف فيك تفاصيل تخلي قلبي يحبك أكثر مما تتصوري.</p>
+            </div>
+
+            <!-- الجزء الرابع -->
+            <div class="message-section">
+              <p class="section-title">رابع حاجة ....</p>
+              <p>ي قلبي ....<br>نبي نقولك شكراً…<br>على وجودك، على صبرك، على ضحكتك،<br>على كل مرة كنتِ فيها جنبي حتى واني ساكت.<br>شكراً لأنك كنتِ النور وقت ما الدنيا كانت غامقة،<br>ولأنك خليتِ الحب حاجة حقيقية، مش مجرد كلمة.</p>
+            </div>
+
+            <!-- الجزء الخامس -->
+            <div class="message-section">
+              <p class="section-title">خامس حاجة ....</p>
+              <p>نحــبك..<br>نوعدك نكون معاك مش بس في اللحظات الحلوة،<br>لكن حتى في الأيام اللي ما يبدا ف يها جوك اخيي  <br> ونحبك<br>ونموت فيك<br>إنت أحسن اختيار<br>إنت ليا أني وبس<br>Aya 💜</p>
+            </div>
+
+            <!-- الجزء السادس -->
+            <div class="message-section">
+              <p class="section-title"> سادس حاجة ....</p>
+              <p>نحــبك..<br>2026 سنة باسمك،<br>بضحكتك،<br>وبكل حلم نبي نعيشه معاك.<br>سنة نبيها تبدأ وتنتهي وإنتِ فيها،<br>لأن أي سنة بدونك، مهما كانت، ما تكونش كاملة.</p>
+            </div>
+
+            <!-- الجزء السابع -->
+            <div class="message-section">
+              <p class="section-title">أخر حاجة ....</p>
+              <p>كل سنة وإنتِ حبيبتي،<br>وحلمي<br>ومرتبي المستقبلية<br>كل سنة وإنتِ السبب اللي يخلي الحياة أحلى.</p>
+              <p class="final-message">نحبك ونموت فيك 💜</p>
+            </div>
+          </div>
+          <button class="btn" onclick="nextScreen()">كملي القدام ي عيوني</button>
+        </div>
+
+        <!-- الشاشة الرابعة - النهاية -->
+        <div class="screen screen-4">
+          <div class="ending-sub">إنت احلى حاجة صارت في حياتي ونبيك معاي في كل شيء 💜 </div>
+          <p class="ending-sub">كل سنة وإنتِ حبيبتي وحب قلبي</p>
+          <div class="heart">💜</div>
+          <p class="signature">نــحـــبـــك</p>
+          <p class="from-name">Anas</p>
+          <p class="signature">❤️</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="">
+      <button class="nav-btn" id="nextBtn" onclick="nextScreen()">رصي اهني كان تبي تمشي القدام</button>
+      <button class="nav-btn" id="prevBtn" onclick="prevScreen()" disabled>رصي اهني كان تبي تولي</button>
+      
+    </div>
+
+    <script>
+      let currentScreen = 0;
+      const screens = document.querySelectorAll('.screen');
+      const totalScreens = screens.length;
+
+      // إنشاء النجوم
+      function createStars() {
+        const starsContainer = document.getElementById('stars');
+        for (let i = 0; i < 120; i++) {
+          const star = document.createElement('div');
+          star.className = 'star';
+          star.style.left = Math.random() * 100 + '%';
+          star.style.top = Math.random() * 100 + '%';
+          star.style.animationDelay = Math.random() * 3 + 's';
+          starsContainer.appendChild(star);
+        }
+      }
+
+      // إنشاء الجسيمات
+      function createParticles() {
+        const particlesContainer = document.getElementById('particles');
+        for (let i = 0; i < 30; i++) {
+          const particle = document.createElement('div');
+          particle.className = 'particle';
+          particle.style.left = Math.random() * 100 + '%';
+          particle.style.top = Math.random() * 100 + '%';
+          particle.style.animationDelay = Math.random() * 5 + 's';
+          particle.style.animationDuration = (15 + Math.random() * 10) + 's';
+          particlesContainer.appendChild(particle);
+        }
+      }
+
+      // إنشاء الورد والقلوب الطائرة
+      function createFloatingElements() {
+        const floatingContainer = document.getElementById('floatingElements');
+        const roses = ['🌹', '🌷', '🌸'];
+        const hearts = ['💜', '💕', '💖', '💜'];
+        
+        for (let i = 0; i < 40; i++) {
+          const element = document.createElement('div');
+          const isHeart = Math.random() > 0.4;
+          
+          if (isHeart) {
+            element.className = 'heart-float';
+            element.textContent = hearts[Math.floor(Math.random() * hearts.length)];
+          } else {
+            element.className = 'rose';
+            element.textContent = roses[Math.floor(Math.random() * roses.length)];
+          }
+          
+          element.style.left = Math.random() * 100 + '%';
+          element.style.top = 100 + '%';
+          element.style.animationDelay = Math.random() * 8 + 's';
+          element.style.animationDuration = (8 + Math.random() * 6) + 's';
+          floatingContainer.appendChild(element);
+        }
+      }
+
+      // تحديث شريط التقدم
+      function updateProgressBar() {
+        const progress = ((currentScreen + 1) / totalScreens) * 100;
+        document.querySelector('.progress-bar').style.width = progress + '%';
+      }
+
+      // عرض الشاشة الحالية
+      function showScreen() {
+        screens.forEach((screen, index) => {
+          screen.classList.remove('active');
+          if (index === currentScreen) {
+            screen.classList.add('active');
+          }
+        });
+
+        // تحديث أزرار التنقل
+        document.getElementById('prevBtn').disabled = currentScreen === 0;
+        document.getElementById('nextBtn').disabled = currentScreen === totalScreens - 1;
+
+        updateProgressBar();
+      }
+
+      // الذهاب للشاشة التالية
+      function nextScreen() {
+        if (currentScreen < totalScreens - 1) {
+          currentScreen++;
+          showScreen();
+        }
+      }
+
+      // الذهاب للشاشة السابقة
+      function prevScreen() {
+        if (currentScreen > 0) {
+          currentScreen--;
+          showScreen();
+        }
+      }
+
+      // التنقل بلوحة المفاتيح
+      document.addEventListener('keydown', (e) => {
+        if (e.key === 'ArrowRight') nextScreen();
+        if (e.key === 'ArrowLeft') prevScreen();
+      });
+
+      // التنقل بالنقر
+      document.addEventListener('click', (e) => {
+        if (e.target.className === 'container' || e.target.className === 'content') {
+          nextScreen();
+        }
+      });
+
+      // تهيئة الصفحة
+      createStars();
+      createParticles();
+      createFloatingElements();
+      showScreen();
+    </script>
+    <script
+      defer
+      src="%VITE_ANALYTICS_ENDPOINT%/umami"
+      data-website-id="%VITE_ANALYTICS_WEBSITE_ID%"></script>
+  </body>
+
+</html>
